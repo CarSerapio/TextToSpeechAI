@@ -1,14 +1,14 @@
 from elevenlabs import generate, play, set_api_key
 import openai 
 
-set_api_key("e4e86b6ed2c835295abb2df1d12ad231") 
-OPENAI_API_KEY = "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" 
+set_api_key("XXX") # add your ElevenLabs API key 
+OPENAI_API_KEY = "XXX" # add your OpenAPI key 
 openai.api_key = OPENAI_API_KEY 
 
 def generate_reply(message: str): 
 
-    messages = [ {"role": "user", "content": "Reply like you are a 19 year old college male and the user's best friend."},
-    {"role": "user", "content": message} ]
+    messages = [ {"role": "user", "content": "XXX"},
+    {"role": "user", "content": message} ] # in the first array object content, i.e. "XXX", add prompt for model, e.g. "Reply like a helpful assistant"
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",

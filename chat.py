@@ -22,7 +22,7 @@ def play_audio(message: str):
 
     audio = generate(
     text=generate_reply(message), 
-    voice="Josh",
+    voice="XXX", # add the model voice, e.g. try "Bella" 
     model="eleven_monolingual_v1"
     )
 

@@ -21,8 +21,8 @@ def generate_reply(message: str):
 def play_audio(message: str): 
 
     audio = generate(
-    text=generate_reply(message), 
-    voice="XXX", # add the model voice, e.g. try "Bella" 
+    text=message, 
+    voice="XXX", # specify voice model, e.g. try "Bella" 
     model="eleven_monolingual_v1"
     )
 
@@ -35,6 +35,8 @@ while True:
         print("Exiting...")
         break
 
-    print(generate_reply(user_input)) # print reply 
+    ai_reply = generate_reply(user_input)
 
-    play_audio(user_input) # play reply 
+    print(ai_reply) # print reply 
+
+    play_audio(ai_reply) # play reply 

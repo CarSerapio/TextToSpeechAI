@@ -32,7 +32,7 @@ class Assistant():
 				messages=self.messages
 			)
 
-			# appending the generated response so that AI remebers past responses
+			# appending the generated response so that AI remembers past responses
 			self.messages.append({"role":"assistant", "content":str(response['choices'][0]['message']['content'])})
 			
 			# generate audio 

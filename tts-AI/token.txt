@@ -1,0 +1,2 @@
+[insert OpenAPI key here]
+[insert Eleven Labs API key here]
